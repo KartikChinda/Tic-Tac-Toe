@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap');
+
+nav ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 30px;
+    border: 3px solid #c3073f;
+    border-radius: 100px;
+    
+    
+    background-color: #c3073f;
+    color: #fcfcfc;
+    height: 75px;
+    font-size: 27px;
+    align-items: center;
+    display: flex;
+    padding: 0 12px;
+    font-family: 'Lora', serif;
+
+}
+
+.gamecontainer{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position: relative;
+
+}
+
+.info{
+    font-size: 22px;
+}
+
+.box{
+    border: 2px solid #4e4e50;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div:hover{
+    background-color: #41031c;
+    
+}
+
+.gameinfo{
+    padding: 0 34px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.imgbox img{
+    padding-top: 15px;
+    padding-left: 20px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#reset{
+    margin: 20px 23px;
+    padding: 1px 19px;
+    background: #c3073f;
+    border: #c3073f;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
+
+.line{
+    background-color: #c42e6a;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    transition: width 0.5s ease-in-out;
+}
